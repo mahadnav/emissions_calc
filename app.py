@@ -5,8 +5,8 @@ ENERGY_CONSUMPTION = 7.2  # GJ per ton
 
 # Fuel emission factors (kg CO2 per GJ)
 FUEL_FACTORS = {
-    "Natural Gas": 56,  # kg CO2/GJ
-    "LPG": 63  # kg CO2/GJ
+    "Natural Gas": 56.1571,  # kg CO2/GJ
+    "LPG": 63.1571  # kg CO2/GJ
 }
 
 st.title("Glass Manufacturing CO₂ Emissions Calculator")
@@ -35,5 +35,5 @@ if total_production > 0:
 
 
 st.caption("Energy factor: 7.2 GJ per ton of glass production.")
-st.caption("Fuel emission factors: Natural Gas (56 kg CO2/GJ), LPG (63 kg CO2/GJ).") 
+st.caption("Fuel emission factors: Natural Gas (56.1571 kg CO2/GJ), LPG (63.1571 kg CO2/GJ).") 
  
