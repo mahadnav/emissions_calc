@@ -10,6 +10,7 @@ FUEL_FACTORS = {
 }
 
 st.title("Glass Manufacturing CO₂ Emissions Calculator")
+st.write("This app calculates the estimated CO₂ emissions from glass manufacturing based on the total production and fuel mix.")
 
 # Step 1: Input total production
 total_production = st.number_input("Enter total glass production (tons/year):", min_value=0, value=20000, step=100)
@@ -30,4 +31,6 @@ if total_production > 0:
 
     st.subheader(f"Estimated Annual Emissions: **{emissions_total:,.0f} tCO₂e**")
 
-st.caption("Emission factor applied: 7 kg CO₂ per ton of glass production.")
+st.caption("Energy factor: 7.2 GJ per ton of glass production.")
+st.caption("Fuel emission factors: Natural Gas (56 kg CO2/GJ), LPG (63 kg CO2/GJ).") 
+ 
