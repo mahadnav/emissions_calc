@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Average Emission Factor (kg CO2 per ton of glass)
-ENERGY_CONSUMPTION = 7.2  # GJ per ton
+ENERGY_CONSUMPTION = 7.9  # GJ per ton
 
 # Fuel emission factors (kg CO2 per GJ)
 FUEL_FACTORS = {
@@ -34,6 +34,6 @@ if total_production > 0:
     st.subheader(f"Emissions per ton of product: **{round(emissions_total/total_production, 2)} tCO₂e/ton glass**")
 
 
-st.caption("Energy factor: 7.2 GJ per ton of glass production.")
-st.caption("Fuel emission factors: Natural Gas (56.1571 kg CO2/GJ), LPG (63.1571 kg CO2/GJ).") 
+st.caption("Energy factor: 7.9 GJ per ton of glass production. Source: https://www.sciencedirect.com/science/article/pii/S2590174524001983")
+st.caption("Fuel emission factors: Natural Gas (56.1571 kg CO2/GJ), LPG (63.1571 kg CO2/GJ). (Source: IPCC)") 
  
