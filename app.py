@@ -28,8 +28,6 @@ if total_production > 0:
     emissions_lpg = (energy_used * (lpg_percent / 100) * FUEL_FACTORS["LPG"]) / 1000
     emissions_total = emissions_natural_gas + emissions_lpg
 
-    total_emissions = (total_production * ENERGY_CONSUMPTION) / 1000  # Convert kg to tons
-
-    st.subheader(f"Estimated Annual Emissions: **{total_emissions:,.2f} tCO₂e**")
+    st.subheader(f"Estimated Annual Emissions: **{emissions_total:,.2f} tCO₂e**")
 
 st.caption("Emission factor applied: 7 kg CO₂ per ton of glass production.")
