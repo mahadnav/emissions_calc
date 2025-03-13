@@ -16,7 +16,7 @@ total_production = st.number_input("Enter total glass production (tons/year):", 
 
 # Step 2: Select fuel mix percentage
 st.header("Fuel Mix")
-natural_gas_percent = st.number_input("Natural Gas (%)", min_value=0, max_value=100, value=50, step=1)
+natural_gas_percent = st.number_input("Natural Gas (%)", min_value=0, max_value=100, value=20, step=0.001)
 lpg_percent = 100 - natural_gas_percent  # Ensuring total is 100%
 
 # Step 3: Calculate emissions
@@ -28,6 +28,6 @@ if total_production > 0:
     emissions_lpg = (energy_used * (lpg_percent / 100) * FUEL_FACTORS["LPG"]) / 1000
     emissions_total = emissions_natural_gas + emissions_lpg
 
-    st.subheader(f"Estimated Annual Emissions: **{emissions_total:,.2f} tCO₂e**")
+    st.subheader(f"Estimated Annual Emissions: **{emissions_total:,.0f} tCO₂e**")
 
 st.caption("Emission factor applied: 7 kg CO₂ per ton of glass production.")
