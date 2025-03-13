@@ -31,6 +31,9 @@ if total_production > 0:
 
     st.subheader(f"Estimated Annual Emissions: **{emissions_total:,.0f} tCO₂e**")
 
+    st.subheader(f"Emissions per ton of product: **{round(emissions_total/total_production, 2)} tCO₂e/ton glass**")
+
+
 st.caption("Energy factor: 7.2 GJ per ton of glass production.")
 st.caption("Fuel emission factors: Natural Gas (56 kg CO2/GJ), LPG (63 kg CO2/GJ).") 
  
