@@ -16,7 +16,7 @@ total_production = st.number_input("Enter total glass production (tons/year):", 
 
 # Step 2: Select fuel mix percentage
 st.header("Fuel Mix")
-natural_gas_percent = st.number_input("Natural Gas (%)", min_value=0, max_value=100, value=20, step=0.001)
+natural_gas_percent = st.number_input("Natural Gas (%)", min_value=0, max_value=100, value=20, step=1)
 lpg_percent = 100 - natural_gas_percent  # Ensuring total is 100%
 
 # Step 3: Calculate emissions
