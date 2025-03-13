@@ -35,5 +35,5 @@ if total_production > 0:
 
 
 st.caption("Energy factor: 7.9 GJ per ton of glass production. Source: https://www.sciencedirect.com/science/article/pii/S2590174524001983")
-st.caption("Fuel emission factors: Natural Gas (56.1571 kg CO2/GJ), LPG (63.1571 kg CO2/GJ). (Source: IPCC)") 
+st.caption("Fuel emission factors: Natural Gas (56.1571 kg CO2/GJ), LPG (63.1571 kg CO2/GJ). (Source: CT Emissions Factors Database)") 
  
