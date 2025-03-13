@@ -12,7 +12,7 @@ FUEL_FACTORS = {
 st.title("Glass Manufacturing CO₂ Emissions Calculator")
 
 # Step 1: Input total production
-total_production = st.number_input("Enter total glass production (tons/year):", min_value=0.0, step=100.0)
+total_production = st.number_input("Enter total glass production (tons/year):", min_value=0, value=20000, step=100)
 
 # Step 2: Select fuel mix percentage
 st.header("Fuel Mix")
